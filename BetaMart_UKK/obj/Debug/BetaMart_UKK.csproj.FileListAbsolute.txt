@@ -1,0 +1,12 @@
+E:\UKK\OOP\BetaMart_UKK\BetaMart_UKK\bin\Debug\BetaMart_UKK.exe.config
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\obj\Debug\BetaMart_UKK.csprojAssemblyReference.cache
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\obj\Debug\BetaMart_UKK.Form1.resources
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\obj\Debug\BetaMart_UKK.Properties.Resources.resources
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\obj\Debug\BetaMart_UKK.csproj.GenerateResource.cache
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\obj\Debug\BetaMart_UKK.csproj.CoreCompileInputs.cache
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\bin\Debug\dbbarang-dua.mdb
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\bin\Debug\BetaMart_UKK.exe.config
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\bin\Debug\BetaMart_UKK.exe
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\bin\Debug\BetaMart_UKK.pdb
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\obj\Debug\BetaMart_UKK.exe
+E:\GENJU\Projek\BetaMart_UKK\BetaMart_UKK\obj\Debug\BetaMart_UKK.pdb

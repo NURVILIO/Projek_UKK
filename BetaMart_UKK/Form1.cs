@@ -76,8 +76,8 @@ namespace BetaMart_UKK
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
-            panel.Enabled = false;
-            barangBindingSource.ResetBindings(false);
+            MessageBox.Show("Apakah Kamu yakin mau menghapus data ini ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            barangBindingSource.RemoveCurrent();
         }
 
         private void btnSave_Click(object sender, EventArgs e)

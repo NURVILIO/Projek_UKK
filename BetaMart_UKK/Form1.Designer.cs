@@ -30,6 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namaBarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jumlahBarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hargaBarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barangBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.appData = new BetaMart_UKK.AppData();
             this.Full = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -43,17 +49,11 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
-            this.appData = new BetaMart_UKK.AppData();
-            this.barangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.barangTableAdapter = new BetaMart_UKK.AppDataTableAdapters.BarangTableAdapter();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namaBarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jumlahBarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hargaBarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.appData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barangBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appData)).BeginInit();
+            this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView
@@ -72,6 +72,43 @@
             this.dataGridView.Size = new System.Drawing.Size(624, 199);
             this.dataGridView.TabIndex = 1;
             this.dataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView_KeyDown);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            // 
+            // namaBarangDataGridViewTextBoxColumn
+            // 
+            this.namaBarangDataGridViewTextBoxColumn.DataPropertyName = "NamaBarang";
+            this.namaBarangDataGridViewTextBoxColumn.HeaderText = "NamaBarang";
+            this.namaBarangDataGridViewTextBoxColumn.Name = "namaBarangDataGridViewTextBoxColumn";
+            this.namaBarangDataGridViewTextBoxColumn.Width = 180;
+            // 
+            // jumlahBarangDataGridViewTextBoxColumn
+            // 
+            this.jumlahBarangDataGridViewTextBoxColumn.DataPropertyName = "JumlahBarang";
+            this.jumlahBarangDataGridViewTextBoxColumn.HeaderText = "JumlahBarang";
+            this.jumlahBarangDataGridViewTextBoxColumn.Name = "jumlahBarangDataGridViewTextBoxColumn";
+            this.jumlahBarangDataGridViewTextBoxColumn.Width = 180;
+            // 
+            // hargaBarangDataGridViewTextBoxColumn
+            // 
+            this.hargaBarangDataGridViewTextBoxColumn.DataPropertyName = "HargaBarang";
+            this.hargaBarangDataGridViewTextBoxColumn.HeaderText = "HargaBarang";
+            this.hargaBarangDataGridViewTextBoxColumn.Name = "hargaBarangDataGridViewTextBoxColumn";
+            this.hargaBarangDataGridViewTextBoxColumn.Width = 180;
+            // 
+            // barangBindingSource
+            // 
+            this.barangBindingSource.DataMember = "Barang";
+            this.barangBindingSource.DataSource = this.appData;
+            // 
+            // appData
+            // 
+            this.appData.DataSetName = "AppData";
+            this.appData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Full
             // 
@@ -172,7 +209,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Kembali";
+            this.btnCancel.Text = "Hapus";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
@@ -196,46 +233,9 @@
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            // appData
-            // 
-            this.appData.DataSetName = "AppData";
-            this.appData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // barangBindingSource
-            // 
-            this.barangBindingSource.DataMember = "Barang";
-            this.barangBindingSource.DataSource = this.appData;
-            // 
             // barangTableAdapter
             // 
             this.barangTableAdapter.ClearBeforeFill = true;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            // 
-            // namaBarangDataGridViewTextBoxColumn
-            // 
-            this.namaBarangDataGridViewTextBoxColumn.DataPropertyName = "NamaBarang";
-            this.namaBarangDataGridViewTextBoxColumn.HeaderText = "NamaBarang";
-            this.namaBarangDataGridViewTextBoxColumn.Name = "namaBarangDataGridViewTextBoxColumn";
-            this.namaBarangDataGridViewTextBoxColumn.Width = 180;
-            // 
-            // jumlahBarangDataGridViewTextBoxColumn
-            // 
-            this.jumlahBarangDataGridViewTextBoxColumn.DataPropertyName = "JumlahBarang";
-            this.jumlahBarangDataGridViewTextBoxColumn.HeaderText = "JumlahBarang";
-            this.jumlahBarangDataGridViewTextBoxColumn.Name = "jumlahBarangDataGridViewTextBoxColumn";
-            this.jumlahBarangDataGridViewTextBoxColumn.Width = 180;
-            // 
-            // hargaBarangDataGridViewTextBoxColumn
-            // 
-            this.hargaBarangDataGridViewTextBoxColumn.DataPropertyName = "HargaBarang";
-            this.hargaBarangDataGridViewTextBoxColumn.HeaderText = "HargaBarang";
-            this.hargaBarangDataGridViewTextBoxColumn.Name = "hargaBarangDataGridViewTextBoxColumn";
-            this.hargaBarangDataGridViewTextBoxColumn.Width = 180;
             // 
             // Form1
             // 
@@ -258,10 +258,10 @@
             this.Text = "BetaMart";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barangBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appData)).EndInit();
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.appData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barangBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
